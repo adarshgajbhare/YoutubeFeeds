@@ -1,6 +1,13 @@
 import FeedCard from "./FeedCard";
-import gplus from "../assets/gplus.png"
+import gplus from "../assets/gplus.png";
+import { useState } from "react";
 const Feed = () => {
+  const [searchBar, setSearchBar] = useState(false);
+
+  const HandleSearchBar = () => {
+    setSearchBar(!searchBar);
+  };
+
   return (
     <>
       <div
@@ -10,7 +17,7 @@ const Feed = () => {
         <div className="userName-Dp flex justify-between items-center">
           <p className="text-4xl bg-gradient-to-r from-red-400 to-yellow-500 bg-clip-text text-transparent font-extrabold tracking-tight">
             {" "}
-            Hello,  Adarsh
+            Hello, Adarsh
           </p>
           <div className="userDp rounded-[50%] overflow-hidden h-16 w-16 ">
             <img
@@ -62,22 +69,43 @@ const Feed = () => {
           </div>
         </div>
       </div>
-         <div className="createCustomFeed h-20 w-20 right-8 shadow-2xl shadow-black  rounded-[50%] overflow-hidden fixed bottom-20">
-            <img src={gplus} className="h-full w-full object-center object-cover" />
-         </div>
+      <div className="createCustomFeed h-20 w-20 right-8 shadow-2xl shadow-black  rounded-[50%] overflow-hidden fixed bottom-20">
+        <img src={gplus} className="h-full w-full object-center object-cover" />
+      </div>
       <div
-        className="BottomNav bg-glassNav text-3xl  font-bold text-white
+        className={`BottomNav  ${
+          searchBar ? "bg-[#312f31]" : "bg-glassNav den"
+        } text-3xl  font-bold text-white
            flex items-center justify-between w-full px-8 py-3
-            fixed bottom-0 "
+            fixed bottom-0 `}
       >
-        <div className="menu  ">
+        <div className={`menu ${searchBar ? "hidden" : ""}`}>
           <i className="fa-solid fa-bars"></i>
         </div>
-        <div className="AddFeed">
-        <i className="fa-solid fa-play"></i>
+        <div className={`play ${searchBar ? "hidden" : ""}`}>
+          <i className="fa-solid fa-play"></i>
         </div>
-        <div className="search">
+        <div
+          onClick={HandleSearchBar}
+          className={`menu ${searchBar ? " hidden" : ""} `}
+        >
           <i className="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div
+          className={`menu  ${
+            searchBar ? " " : "hidden"
+          } bg-[#474547] flex justify-between items-center px-3 rounded-lg w-full py-2`}
+        >
+          <input
+            type="text"
+            placeholder="Search any channel or feed... "
+            className="mx-auto rounded-lg  py-1 bg-[#474547] w-full outline-none   text-base font-semibold"
+          />
+          <i
+            onClick={HandleSearchBar}
+            className="fa-solid fa-circle-xmark  text-[1.4rem]"
+          ></i>
         </div>
       </div>
     </>
