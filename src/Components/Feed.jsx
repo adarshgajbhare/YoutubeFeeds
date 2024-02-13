@@ -12,7 +12,7 @@ const Feed = () => {
             {" "}
             Hello,  Adarsh
           </p>
-          <div className="userDp rounded-[50%] overflow-hidden h-16 w-16 border">
+          <div className="userDp rounded-[50%] overflow-hidden h-16 w-16 ">
             <img
               className="h-full w-full object-cover object-center  "
               src="https://www.indiewire.com/wp-content/uploads/2016/08/20140216-131646.jpg"
@@ -64,7 +64,7 @@ const Feed = () => {
       </div>
 
       <div
-        className="BottomNav bg-glass border-t-2  text-3xl  font-bold text-white
+        className="BottomNav bg-glassNav border-t-2  text-3xl  font-bold text-white
            flex items-center justify-between w-full px-8 py-4 fixed bottom-0 "
       >
         <div className="menu  ">
