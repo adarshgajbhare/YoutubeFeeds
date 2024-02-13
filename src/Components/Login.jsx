@@ -23,7 +23,7 @@ const Login = () => {
           /></div>
         </div>
         <div
-          className="login-box bg-white flex-1 px-6 2xl:px-6 lg:px-0   text-white  w-full  flex flex-col lg:flex lg:flex-col
+          className="login-box bg-[#292929] flex-1 px-6 2xl:px-6 lg:px-0   text-white  w-full  flex flex-col lg:flex lg:flex-col
            rounded-t-3xl  2xl:h-full 2xl:justify-center 2xl:rounded-3xl  2xl:relative 2xl:bg-none overflow-hidden 
            lg:h-full lg:justify-center lg:rounded-3xl  lg:relative lg:bg-none  md:gap-40 
            
@@ -55,7 +55,7 @@ const Login = () => {
             </div>
 
             <div className="btn z-10">
-              <button className="bg-[#1da1f2] text-lg font-bold tracking-tight w-full rounded-xl   hover:bg-blue-500 flex items-center  2xl:mx-auto py-2 px-1 lg:mx-auto">
+              <button className="bg-[#373737] text-lg font-bold tracking-tight w-full rounded-xl   hover:bg-blue-500 flex items-center  2xl:mx-auto py-2 px-1 lg:mx-auto">
                 <div className="img  h-full bg-white rounded-xl ">
                   {" "}
                   <img className=" h-10 inline-block" src={googleIcon} />{" "}
@@ -72,7 +72,7 @@ const Login = () => {
            justify-evenly"
           >
             <div className="title  2xl:mx-auto z-50">
-              <p className="text-[#050049] text-6xl font-black tracking-tight  mb-2  2xl:text-7xl">
+              <p className="text-white text-6xl font-black tracking-tight  mb-2  2xl:text-7xl">
                 Welcome to
               </p>
               <p className="text-[#ff6565] font-black tracking-tighter text-4xl  mb-2">
@@ -84,7 +84,7 @@ const Login = () => {
             </div>
 
             <div className=" btn z-10 ">
-              <button className="bg-[#1da1f2] text-lg font-bold tracking-tight w-full rounded-xl   hover:bg-blue-500 flex items-center 2xl:mx-auto py-2  px-1">
+              <button className="bg-[#373737] text-lg font-bold tracking-tight w-full rounded-xl   hover:bg-blue-500 flex items-center 2xl:mx-auto py-2  px-2">
                 <div className="img  h-full bg-white rounded-xl ">
                   {" "}
                   <img className=" h-10 inline-block" src={googleIcon} />{" "}

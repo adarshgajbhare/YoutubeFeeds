@@ -1,5 +1,5 @@
 import FeedCard from "./FeedCard";
-
+import gplus from "../assets/gplus.png"
 const Feed = () => {
   return (
     <>
@@ -62,7 +62,9 @@ const Feed = () => {
           </div>
         </div>
       </div>
-
+         <div className="createCustomFeed h-20 w-20 right-8 shadow-2xl shadow-black  rounded-[50%] overflow-hidden fixed bottom-20">
+            <img src={gplus} className="h-full w-full object-center object-cover" />
+         </div>
       <div
         className="BottomNav bg-glassNav text-3xl  font-bold text-white
            flex items-center justify-between w-full px-8 py-3
@@ -72,7 +74,7 @@ const Feed = () => {
           <i className="fa-solid fa-bars"></i>
         </div>
         <div className="AddFeed">
-          <i className="fa-solid fa-plus"></i>
+        <i className="fa-solid fa-play"></i>
         </div>
         <div className="search">
           <i className="fa-solid fa-magnifying-glass"></i>
