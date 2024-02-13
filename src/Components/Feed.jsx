@@ -65,7 +65,8 @@ const Feed = () => {
 
       <div
         className="BottomNav bg-glassNav text-3xl  font-bold text-white
-           flex items-center justify-between w-full px-8 py-4 fixed bottom-0 "
+           flex items-center justify-between w-full px-8 py-3
+            fixed bottom-0 "
       >
         <div className="menu  ">
           <i className="fa-solid fa-bars"></i>
