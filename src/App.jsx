@@ -1,14 +1,15 @@
 
+import Login from "./Components/Login";
+import useGetChannels from "./Hooks/useGetChannels";
+import  "../src/index.css"
+const App = () => {
 
-function App() {
-
-
+  useGetChannels();
   return (
     <>
-     <h1 className="text-5xl text-blue-400">Adarsh is here</h1>
-        
+     <Login />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
