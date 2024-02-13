@@ -21,13 +21,13 @@ const Feed = () => {
         </div>
         <div className="grid grid-cols-2 grid-rows-1 gap-4 place-items-center    ">
           <div className=" FeedCard text-center  bg-[#292929] w-full h-48 rounded-lg flex flex-col justify-evenly">
-            <i className="bg-[#373737] mx-auto w-fit rounded-xl fa-solid fa-film p-6 text-4xl text-white"></i>
+            <i className="bg-[#373737] mx-auto w-fit rounded-xl scale-110 fa-solid fa-film p-6 text-4xl text-white"></i>
             <p className="text-white text-2xl  font-extrabold tracking-tighter ">
               Movies
             </p>
           </div>
           <div className=" FeedCard text-center  bg-[#292929] w-full h-48 rounded-lg flex flex-col justify-evenly">
-            <i className="bg-[#373737] mx-auto  w-fit rounded-xl fa-solid fa-music p-6 text-4xl text-white"></i>
+            <i className="bg-[#373737] mx-auto  w-fit rounded-xl scale-110 fa-solid fa-music p-6 text-4xl text-white"></i>
             <p className="text-white text-2xl  font-extrabold tracking-tighter ">
               Music
             </p>
@@ -35,13 +35,13 @@ const Feed = () => {
         </div>
         <div className="grid grid-cols-2 grid-rows-1 gap-4 place-items-center ">
           <div className=" FeedCard text-center  bg-[#292929] w-full h-48 rounded-lg flex flex-col justify-evenly">
-            <i className="bg-[#373737] mx-auto w-fit rounded-xl fa-solid fa-football p-6 text-4xl text-white"></i>
+            <i className="bg-[#373737] mx-auto w-fit rounded-xl scale-110 fa-solid fa-football p-6 text-4xl text-white"></i>
             <p className="text-white text-2xl  font-extrabold tracking-tighter ">
               Sports
             </p>
           </div>
           <div className=" FeedCard text-center  bg-[#292929] w-full h-48 rounded-lg flex flex-col justify-evenly">
-            <i className="bg-[#373737] mx-auto w-fit rounded-xl fa-solid fa-graduation-cap p-6 text-4xl text-white"></i>
+            <i className="bg-[#373737] mx-auto w-fit rounded-xl scale-110 fa-solid fa-graduation-cap p-6 text-4xl text-white"></i>
             <p className="text-white text-2xl  font-extrabold tracking-tighter ">
               Education
             </p>
@@ -49,13 +49,13 @@ const Feed = () => {
         </div>
         <div className="grid grid-cols-2 grid-rows-1 gap-4 place-items-center ">
           <div className=" FeedCard text-center  bg-[#292929] w-full h-48 rounded-lg flex flex-col justify-evenly">
-            <i className="bg-[#373737] mx-auto w-fit rounded-xl fa-solid fa-shirt p-6 text-4xl text-white"></i>
+            <i className="bg-[#373737] mx-auto w-fit rounded-xl scale-110 fa-solid fa-shirt p-6 text-4xl text-white"></i>
             <p className="text-white text-2xl  font-extrabold tracking-tighter ">
               Fashion
             </p>
           </div>
           <div className=" FeedCard text-center  bg-[#292929] w-full h-48 rounded-lg flex flex-col justify-evenly">
-            <i className="bg-[#373737] mx-auto w-fit rounded-xl fa-solid fa-mobile-screen-button p-6 text-4xl text-white"></i>
+            <i className="bg-[#373737] mx-auto w-fit rounded-xl scale-110 fa-solid fa-mobile-screen-button p-6 text-4xl text-white"></i>
             <p className="text-white text-2xl  font-extrabold tracking-tighter ">
               Tech
             </p>
@@ -64,7 +64,7 @@ const Feed = () => {
       </div>
 
       <div
-        className="BottomNav bg-glassNav border-t-2  text-3xl  font-bold text-white
+        className="BottomNav bg-glassNav text-3xl  font-bold text-white
            flex items-center justify-between w-full px-8 py-4 fixed bottom-0 "
       >
         <div className="menu  ">
