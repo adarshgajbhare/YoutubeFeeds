@@ -39,9 +39,9 @@ const Login = () => {
         <div className="login-box text-white mb-14 z-20  w-full text-center flex flex-col gap-4 px-4">
           <p className="hero-line font-black tracking-tighter text-5xl leading-tight bg-gradient-to-r from-red-400 to-yellow-500 bg-clip-text text-transparent">DE-CLUTTER <br /> YOUR FEED</p>
           <p className="hero-line text-lg opacity-50">Take back control of the algorithm.</p>
-          <button className="g-btn mt-4 flex justify-center items-center gap-2 bg-[#316FF6] w-[90%] text-nowrap lg:w-1/3 md:w-1/2 mx-auto px-3 py-4 rounded-2xl font-bold text-xl">
-         <div className="logo-div mr-auto bg-glassNav px-2 py-1 rounded-xl"> <i class="fa-brands fa-google  text-2xl text-white"></i></div>
-          <p className="mr-auto tracking-tight text-white font-bold">Continue with Google</p>
+          <button onClick={HandleSignIn} className="g-btn mt-4 flex justify-center items-center gap-2 bg-[#316FF6] w-[90%] text-nowrap lg:w-1/3 md:w-1/2 mx-auto px-3 py-4 rounded-2xl font-bold text-xl">
+            <div className="logo-div mr-auto bg-glassNav px-2 py-1 rounded-xl"> <i class="fa-brands fa-google  text-2xl text-white"></i></div>
+            <p className="mr-auto tracking-tight text-white font-bold">Continue with Google</p>
           </button>
         </div>
 

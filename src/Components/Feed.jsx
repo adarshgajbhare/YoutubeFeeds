@@ -115,9 +115,9 @@ const Feed = () => {
         </div>
 
       </div>
-      <div className="createCustomFeed h-20 w-20 right-8 shadow-2xl shadow-black  rounded-[50%] overflow-hidden fixed bottom-20">
+      {/* <div className="createCustomFeed h-20 w-20 right-8 shadow-2xl shadow-black  rounded-[50%] overflow-hidden fixed bottom-20">
         <img src={gplus} className="h-full w-full object-center object-cover" />
-      </div>
+      </div> */}
       <div
         className={`BottomNav  ${searchBar ? "bg-[#312f31]" : "bg-glass-black pb-4 z-20 den"
           } text-2xl  font-bold text-[#EAEBED]
