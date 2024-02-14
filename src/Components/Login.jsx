@@ -24,14 +24,19 @@ const Login = () => {
         const token = credential.accessToken;
 
         const user = result.user;
-        console.log("user Details", user);
+
         setUser(user);
+        dispatch(
+          addUser({
+            name: result.user.displayName,
+            email: result.user.email,
+            photoUrl: result.user.photoURL,
+          })
+        );
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-
-        const email = error.customData.email;
 
         const credential = GoogleAuthProvider.credentialFromError(error);
         // ...
@@ -39,14 +44,10 @@ const Login = () => {
   };
 
   useEffect(() => {
-    console.log("AG is here ");
     if (user != null) {
-      console.log("AG is before ");
-      dispatch(addUser(user.result));
       navigate("/Feed");
-      console.log("AG is after ");
     }
-  }, [dispatch, navigate, user]);
+  }, [navigate, user]);
 
   return (
     <>
