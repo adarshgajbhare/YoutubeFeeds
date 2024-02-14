@@ -1,9 +1,10 @@
-import FeedCard from "./FeedCard";
+import { useSelector } from "react-redux";
 import gplus from "../assets/gplus.png";
 import { useState } from "react";
 const Feed = () => {
   const [searchBar, setSearchBar] = useState(false);
-
+    const user = useSelector((store) => store?.user?.addUser)
+    console.log("feed user",user)
   const HandleSearchBar = () => {
     setSearchBar(!searchBar);
   };
