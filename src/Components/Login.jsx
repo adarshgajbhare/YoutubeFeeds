@@ -3,12 +3,12 @@ import tvIcon from "../assets/tv.png";
 import popcorn from "../assets/popCorn.png";
 import { Link } from "react-router-dom";
 import  {auth, provider } from "../utils/firebase"
-import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { GoogleAuthProvider, signInWithPopup , browserPopupRedirectResolver  } from "firebase/auth";
 const Login = () => {
 
 
   const HandleSignIn =() =>{
-  signInWithPopup(auth, provider)
+  signInWithPopup(auth, provider , browserPopupRedirectResolver)
   .then((result) => {
     // This gives you a Google Access Token. You can use it to access the Google API.
     const credential = GoogleAuthProvider.credentialFromResult(result);
