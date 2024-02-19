@@ -20,7 +20,6 @@ const Login = () => {
         const token = credential.accessToken;
         console.log(token);
         const user = result.user;
-
         setUser(user);
       })
       .catch((error) => {
@@ -31,18 +30,19 @@ const Login = () => {
       });
   };
 
+  dispatch(
+    addUser({
+      name: user?.displayName,
+      email: user?.email,
+      photoUrl: user?.photoURL,
+    }),
+  );
+
   useEffect(() => {
     if (user != null) {
-      dispatch(
-        addUser({
-          name: user.displayName,
-          email: user.email,
-          photoUrl: user.photoURL,
-        }),
-      );
       navigate("/search");
     }
-  }, [navigate, user, dispatch]);
+  }, [navigate, user]);
 
   return (
     <>

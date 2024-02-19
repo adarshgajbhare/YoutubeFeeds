@@ -9,7 +9,7 @@ const useSearch = (channelName) => {
 const searchChannel = async () => {
   try {
     const searchResponse = await fetch(
-      `https://www.googleapis.com/youtube/v3/search?q=${encodeURIComponent(channelName)}&part=snippet&contentDetails&statistics&key=${API_KEY}`
+      `https://www.googleapis.com/youtube/v3/search?q=${encodeURIComponent(channelName)}&type=channel&part=snippet&key=${API_KEY}&maxResults=100`
     );
 
     if (!searchResponse.ok) {

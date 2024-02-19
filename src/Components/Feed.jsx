@@ -7,22 +7,20 @@ const Feed = () => {
   return (
     <>
       <div
-        className="feedMain flex h-screen w-screen flex-col gap-4 overflow-y-scroll bg-gradient-to-b from-gray-900 to-red-800 
-      p-4"
+        className="feedMain flex h-screen w-screen flex-col gap-4 overflow-y-scroll
+         bg-gradient-to-b from-gray-900 to-red-800 p-4"
       >
         <div className="userName-Dp flex items-center justify-between">
           <p className="bg-gradient-to-r from-red-400 to-yellow-500 bg-clip-text text-2xl font-bold tracking-tight text-transparent">
-            {" "}
             {`Hello, ${user?.name}`}
           </p>
           <div className="userDp h-12 w-12 overflow-hidden rounded-[50%] border-2 border-sky-200 ">
             <img
-              className="h-full w-full object-cover object-center  "
+              className="h-full w-full object-cover object-center "
               src={`${user?.photoUrl}`}
             />
           </div>
         </div>
-
         <div className="grid grid-cols-2 grid-rows-1 place-items-center gap-4 ">
           <div className="FeedCard relative  flex h-44 w-full flex-col justify-evenly overflow-hidden rounded-lg bg-[#1C1C1E] text-center">
             <div className="overlay absolute inset-0 z-10 h-full w-full">
@@ -131,7 +129,7 @@ const Feed = () => {
           </div>
         </div>
       </div>
-   
+
       <BottomNavbar />
     </>
   );
