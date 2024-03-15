@@ -20,8 +20,8 @@ const BottomNavbar = () => {
     <>
       <div
         className={`BottomNav ${searchBar ? "bg-[#312f31]" : "bg-glass-black den z-20 pb-4"}
-           fixed  bottom-0 flex w-full items-center justify-between px-8
-            py-3 text-2xl  font-bold text-[#EAEBED] `}
+           fixed  bottom-0 z-[999] flex w-full items-center justify-between
+            px-8 py-3  text-2xl font-bold text-[#EAEBED]`}
       >
         <Link to="/Feed">
           <div className={`menu ${searchBar ? "hidden" : ""}`}>
