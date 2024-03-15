@@ -7,7 +7,6 @@ const App = () => {
   return (
     <>
       <Provider store={appStore}>
-        {" "}
         <Routings />
       </Provider>
     </>

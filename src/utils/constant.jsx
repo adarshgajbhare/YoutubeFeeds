@@ -1,5 +1,5 @@
-// export const API_KEY = "AIzaSyBw7B1moKVjKgh5dYDOD5bj8D1SCc5WEW0";
-export const API_KEY = "AIzaSyDvMTlhlNUZNfys0p0NEWfekINSS1EjsqM";
+export const API_KEY = "AIzaSyBw7B1moKVjKgh5dYDOD5bj8D1SCc5WEW0";
+// export const API_KEY = "AIzaSyDvMTlhlNUZNfys0p0NEWfekINSS1EjsqM";
 
 export const YT_CHANNELS = 
 `https://youtube.googleapis.com/youtube/v3/channels?part=snippet%2CcontentDetails%2Cstatistics&id=UC_x5XG1OV2P6uZZ5FSM9Ttw&key=${API_KEY}`;
